@@ -1,0 +1,42 @@
+body {
+  background: #f2eee3;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
+.inner {
+  background: red;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 13%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner:hover {
+  clip-path: circle(75%);
+  background: red;
+}
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+.inner h1 {
+  color: black;
+  margin: 0;
+}
+.inner p {
+  color: white;
+  font-size: 0.8rem;
+}
